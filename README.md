@@ -4,6 +4,6 @@ Solutions to Daily Coding Problems.
 # Run Test
 To run the unit tests, use this command
 
-``sh
+```sh
  $> python -m unittest discover 
 ```
