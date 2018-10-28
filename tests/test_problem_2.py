@@ -15,9 +15,15 @@ class TestProblem1(unittest.TestCase):
 
         self.assertListEqual(result, L)
 
-    def test_list(self):
+    def test_non_zero_list(self):
         L = [1, 2, 3, 4, 5]
         result = problem_2.solution(L)
         solution = [120, 60, 40, 30, 24]
 
         self.assertListEqual(result, solution)
+
+    def test_zero_in_list(self):
+        L = [1, 0, 2, 3, 4, 5]
+        result = problem_2.solution(L)
+
+        self.assertIsNone(result)

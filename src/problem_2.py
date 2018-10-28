@@ -19,8 +19,14 @@ def solution(L):
     if not L:
         return None
 
+    # Return the identity if the element-count is fewer than 3
     if len(L) < 3:
       return L
+
+    # Prevent division-by-zero
+    for i in range(0, len(L)):
+      if L[i] == 0:
+        return None
 
     product = 1
 
