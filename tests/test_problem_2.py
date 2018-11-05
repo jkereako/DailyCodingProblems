@@ -3,7 +3,7 @@ from src import problem_2
 import unittest
 import random
 
-class TestProblem1(unittest.TestCase):
+class TestProblem2(unittest.TestCase):
     def test_empty_list_is_none(self):
         result = problem_2.solution([])
         
